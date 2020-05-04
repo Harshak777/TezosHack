@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Home from "./components/Home"
+import home from "./components/Home"
 import App1 from "./components/SellerDashboard";
 import Blogin from "./components/Blogin";
 import Bsignup from "./components/Bsignup";
@@ -18,7 +18,7 @@ export default class App extends Component{
     return (
       <Router>
         <div className="app">
-          {<Route path="/" exact component={ Home } />}
+          {<Route path="/" exact component={ home } />}
           <Route path="/buyer/signup" exact component={ Bsignup } />
           <Route path="/buyer/login" exact component={ Blogin }/>
           <Route path="/buyer/dashboard" exact component={ App1 }/>
